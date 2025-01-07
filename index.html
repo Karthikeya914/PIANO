@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Piano</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="controls">
+        <select id="instrument">
+          <option value="piano">Piano</option>
+          <option value="organ">Organ</option>
+          <option value="acoustic">Acoustic</option>
+        </select>
+        <button id="recordBtn">Record</button>
+        <button id="playBtn" disabled>Play Recording</button>
+      </div>
+      <div class="piano">
+        <!-- Octave 2 -->
+        <div data-note="C2" class="key white" data-key="90">Z</div>
+        <div data-note="C#2" class="key black" data-key="83">S</div>
+        <div data-note="D2" class="key white" data-key="88">X</div>
+        <div data-note="D#2" class="key black" data-key="68">D</div>
+        <div data-note="E2" class="key white" data-key="67">C</div>
+        <div data-note="F2" class="key white" data-key="86">V</div>
+        <div data-note="F#2" class="key black" data-key="71">G</div>
+        <div data-note="G2" class="key white" data-key="66">B</div>
+        <div data-note="G#2" class="key black" data-key="72">H</div>
+        <div data-note="A2" class="key white" data-key="78">N</div>
+        <div data-note="A#2" class="key black" data-key="74">J</div>
+        <div data-note="B2" class="key white" data-key="77">M</div>
+
+        <!-- Octave 3 -->
+        <div data-note="C3" class="key white" data-key="81">Q</div>
+        <div data-note="C#3" class="key black" data-key="50">2</div>
+        <div data-note="D3" class="key white" data-key="87">W</div>
+        <div data-note="D#3" class="key black" data-key="51">3</div>
+        <div data-note="E3" class="key white" data-key="69">E</div>
+        <div data-note="F3" class="key white" data-key="82">R</div>
+        <div data-note="F#3" class="key black" data-key="53">5</div>
+        <div data-note="G3" class="key white" data-key="84">T</div>
+        <div data-note="G#3" class="key black" data-key="54">6</div>
+        <div data-note="A3" class="key white" data-key="89">Y</div>
+        <div data-note="A#3" class="key black" data-key="55">7</div>
+        <div data-note="B3" class="key white" data-key="85">U</div>
+
+        <!-- Octave 4 -->
+        <div data-note="C4" class="key white" data-key="73">I</div>
+        <div data-note="C#4" class="key black" data-key="57">9</div>
+        <div data-note="D4" class="key white" data-key="79">O</div>
+        <div data-note="D#4" class="key black" data-key="48">0</div>
+        <div data-note="E4" class="key white" data-key="80">P</div>
+        <div data-note="F4" class="key white" data-key="219">[</div>
+        <div data-note="F#4" class="key black" data-key="187">=</div>
+        <div data-note="G4" class="key white" data-key="221">]</div>
+        <div data-note="G#4" class="key black" data-key="8">Backspace</div>
+        <div data-note="A4" class="key white" data-key="220">\</div>
+        <div data-note="A#4" class="key black" data-key="46">Del</div>
+        <div data-note="B4" class="key white" data-key="35">End</div>
+
+        <!-- Octave 5 -->
+        <div data-note="C5" class="key white" data-key="36">Home</div>
+        <div data-note="C#5" class="key black" data-key="37">←</div>
+        <div data-note="D5" class="key white" data-key="38">↑</div>
+        <div data-note="D#5" class="key black" data-key="39">→</div>
+        <div data-note="E5" class="key white" data-key="40">↓</div>
+        <div data-note="F5" class="key white" data-key="45">Insert</div>
+        <div data-note="F#5" class="key black" data-key="33">PgUp</div>
+        <div data-note="G5" class="key white" data-key="34">PgDn</div>
+        <div data-note="G#5" class="key black" data-key="112">F1</div>
+        <div data-note="A5" class="key white" data-key="113">F2</div>
+        <div data-note="A#5" class="key black" data-key="114">F3</div>
+        <div data-note="B5" class="key white" data-key="115">F4</div>
+        <div data-note="C6" class="key white" data-key="116">F5</div>
+      </div>
+      <div id="noteDisplay"></div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
